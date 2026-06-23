@@ -1,6 +1,6 @@
 
 # Why Predicting CNC Cycle Time from a STEP File Is Harder Than It Sounds
-#### 28 june, 2026
+#### 30 June, 2026
 
 during my internship at 'Indo-MIM,' i spent four weeks trying to predict <abbr title="Computer Numerical Control. A machine that performs various complex machining processes across multiple axes">CNC</abbr> machining <abbr title="The time it takes for any part to get machined/manufactured">cycle time</abbr> directly from a <abbr title="A file format that stores 3D geometry and is used for cross-platform CAD accessibility">STEP</abbr> file.
 
