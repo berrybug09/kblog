@@ -52,7 +52,7 @@ unfortunately, geometry isn't machining. two parts with the same volume can requ
 ---
 
 ## the data
-fortunately however, i wasn't starting completely from scratch.
+on the other hand, i wasn't starting completely from scratch.
 
 the company already had historical data for previously manufactured parts, including their actual cycle times and corresponding STEP files. i also received tool datasets and parameters.
 
