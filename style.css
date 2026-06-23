@@ -1,0 +1,169 @@
+body {
+    background-color: #111111;
+    color: #e6e6e6;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+body.home {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+body.post {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 6rem;
+    min-height: 70vh;
+}
+
+.left-panel {
+    padding-right: 2rem;
+}
+
+.right-panel {
+    border-left: 1px solid #222;
+    padding-left: 2rem;
+}
+
+
+.right-panel a {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+code {
+    background-color: #1f1f1f;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 2rem 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+#content ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    margin: 1rem 0;
+}
+
+#content li {
+    margin-bottom: 0.1rem;
+    margin-top: -0.2rem;
+    color: #999;
+}
+
+#content li::marker {
+    color: #999;
+}
+
+#content li p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+}
+
+#content h1{
+    font-size: 2.5rem;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: #888;
+    font-weight: normal;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    color: #b0b0b0;
+    margin-top: 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-date {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.post-link {
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.post-link:hover {
+    color: #ffffff;
+}
+
+abbr {
+    text-decoration: underline dotted;
+    text-decoration-color: #666;
+    cursor: help;
+}
+
+abbr:hover {
+    color: #ffffff;
+}
