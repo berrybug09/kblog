@@ -17,7 +17,9 @@ on my first day, i was introduced to a problem that sounded surprisingly straigh
 
 when i was given the problem statement, it sounded deceptively simple and the idea seemed obvious.
 
-a STEP file contains the geometry of the part. geometry influences machining operations. machining operations determine machining time.
+a STEP file contains the geometry of the part. if you know the geometry, you should be able to identify the machining operations required. if you know the machining operations, you should be able to estimate how long they will take.
+
+at least, that was the theory.
 
 ---
 
@@ -26,7 +28,7 @@ the first step was figuring out how people normally approach this problem.
 
 as it turns out, there aren't many people trying to estimate CNC cycle time directly from STEP geometry. there are, however, a lot of people on Reddit who are very confident about how it should be done.
 
-i finally landed on using Python and specific libraries.
+after spending several evenings reading forum discussions, research papers, and CAM-related documentation, i decided to use Python.
 
 the plan?
 - use Python to read the STEP files.

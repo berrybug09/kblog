@@ -1,5 +1,17 @@
 body {
-    background-color: #111111;
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(255,255,255,0.025),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(255,255,255,0.015),
+            transparent 45%
+        ),
+        #0f1217;
+
     color: #e6e6e6;
     font-family: Georgia, serif;
     font-size: 18px;
@@ -23,7 +35,15 @@ body.post {
     grid-template-columns: 4fr 1fr;
     gap: 6rem;
     min-height: 70vh;
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 6rem;
+    min-height: 70vh;
 }
+
 
 .left-panel {
     padding-right: 2rem;
@@ -158,6 +178,12 @@ p {
     color: #ffffff;
 }
 
+.post {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
 abbr {
     text-decoration: underline dotted;
     text-decoration-color: #666;
@@ -166,4 +192,35 @@ abbr {
 
 abbr:hover {
     color: #ffffff;
+}
+
+#cursor-glow {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,0.1) 0%,
+        rgba(198, 198, 198, 0.036) 30%,
+        rgba(255,255,255,0) 70%
+    );
+
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+}
+
+.engineering-note {
+    margin: 2rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid #222;
+    color: #999;
+}
+
+#daily-quote {
+    margin-top: 2rem;
+    color: #999;
+    font-style: italic;
 }
