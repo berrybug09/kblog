@@ -9,16 +9,16 @@ a third with added features, a fourth with abstractions and dynamic options. and
 
 complexity isn't something that arrives all at once. it builds over "small improvements," until the project becomes harder to understand than it is to use.
 
-the weird part is, no one decided to make it complicated on purpose. every addition, when introduced made perfect sense.
+the weird part is, no one decided to make it complicated on purpose. every addition, when introduced, made perfect sense.
 
 ---
 
 ## complexity feels productive
 a physicist seeks to explain how the universe works. a mathematician searches for elegant proofs. a computer scientist studies computation itself.
 
-engineers however, are relentlessly practical. they take all those ideas and ask one single question:
+engineers, however, are relentlessly practical. they take all those ideas and ask one single question:
 
-"does it solve the probem?"
+"does it solve the problem?"
 
 this mindset is what makes engineering so satisfying. every design decision, every line of code, every PCB, every gearbox, every algorithm exists for a reason. they are not built to impress but to work.
 
@@ -47,7 +47,7 @@ and "costs" here don't necessarily mean money.
 
 sometimes it could be measured in milliseconds. sometimes in hours spent debugging. sometimes in manufacturing effort. sometimes in opportunities lost because changing anything has become too risky.
 
-complexity will always demand payments, whatever form it takes. the only question is, what currency will it ask for.
+complexity will always demand payment, whatever form it takes. the only question is, what currency will it ask for.
 
 ### maintenance tax
 every new component has to be understood. every new feature has to be tested. every interface has to be documented and every configuration has to be supported.
@@ -55,7 +55,7 @@ every new component has to be understood. every new feature has to be tested. ev
 projects don't become difficult because of one massive change. rather it happens due to hundreds of perfectly reasonable ones.
 
 ### knowledge tax
-at some point in time, every project has reached that stage: "dont touch that module"
+at some point in time, every project has reached that stage: "don't touch that module"
 
 nobody knows why. nobody remembers who wrote it but everybody knows, if it's touched, everything will collapse. why bother if it works.
 
@@ -69,7 +69,7 @@ when it doesn't work, we end up at "debugging" the system. what follows is anoth
 ### decision tax
 every option creates another decision. every checkbox creates another discussion. every configurable parameter creates another argument.
 
-more options don't always create better softwares or products. sometimes they lead to further decisions which spread out and now you have ten people wasting away trying to "decide" what is right.
+more options don't always create better software or products. sometimes they lead to further decisions which spread out and now you have ten people wasting away trying to "decide" what is right.
 
 ### manufacturing tax
 mechanical systems suffer the same problem. one added pocket in the design becomes another machining operation. this calls for a change in the tooling. this adds to the setup time which affects machining cost. and inspection becomes harder.
@@ -87,7 +87,7 @@ because simplicity isn't what engineers start with but what good engineers end a
 
 anyone can add another feature. another design operation. another algorithm or option or part.
 
-the real challenege is about removing one without sacrificing capability. that is optimisation.
+the real challenge is about removing one without sacrificing capability. that is optimisation.
 
 the first approach grows the project. the second improves it. that's the paradox.
 
@@ -95,14 +95,14 @@ good engineering looks deceptively simple from the outside because it's not that
 
 the cleanest API isn't the easiest to design. 
 
-the simplest gearbox isn't the one with few gears rather the gearbox that accomplishes exactly what it needs to do.
+the simplest gearbox isn't the one with the fewest gears, but the gearbox that accomplishes exactly what it needs to do.
 
 the best designs aren't remembered for how much they contain but for how little they needed.
 
 ---
 
 ## well.... how do you actually progress?
-more features is progress. that isn't wrong but the difference is to recognise isolated progress and efficient progress.
+adding more features is progress. while that isn't wrong, it's still important to differentiate isolated progress and efficient progress.
 
 isolated progress asks: "did this feature make the project better?"
 
@@ -110,13 +110,11 @@ efficient progress asks: "did the entire system become better due to the additio
 
 the difference sounds subtle but it isn't. 
 
-adding another sensor may improve accuracy. adding another configuration option may make make it more flexible. adding anothe abstraction may make one module clearer.
+adding another sensor may improve accuracy. adding another configuration option may make it more flexible. adding another abstraction may make one module clearer.
 
-viewed in isolation, each addition seems justified. however, when viewed together, they might increase maintenance effort, reduce performance, make onboarding harder and leave the next engineer wondering why are things so complicated.
+viewed in isolation, each addition seems justified. however, when viewed together, they might increase maintenance effort, reduce performance, make onboarding harder and leave the next engineer wondering why things are so complicated.
 
 never measure progress by how much was added. measure it based on the value returned compared to the complexity added.
-
-adding another feature, decision, option might genuinely improve the system but was it really needed.
 
 engineering has never been about building complicated or fancy systems. it has always been about building effective ones.
 

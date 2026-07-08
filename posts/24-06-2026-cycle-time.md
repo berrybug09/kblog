@@ -1,4 +1,3 @@
-
 # Why Predicting CNC Cycle Time from a STEP File Is Harder Than It Sounds
 #### 24 June, 2026
 
