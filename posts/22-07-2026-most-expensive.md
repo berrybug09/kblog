@@ -37,7 +37,7 @@ the button took five minutes. everything around the button took five hours.
 ## we only notice the visible part
 humans are remarkably good at compressing complicated work into a single sentence. we see the result, not the process.
 
-a car drives. a website loads. a machines finishes a part.
+a car drives. a website loads. a machine finishes a part.
 
 by the time we see any of it, thousands of decisions have already been made. the smoother something appears to work, the easier it is to believe it was simple to build.
 
@@ -50,7 +50,9 @@ engineering isn't just solving problems. it's predicting consequences.
 
 changing one dimension isn't one decision. it's a chain of decisions.
 
-experienced engineers don't immediately think about the change itself. they think about everything connected to it. move a hole and assembly might change. increase accuracy and cost might increase. fix one bug and another system might stop working.
+experienced engineers don't immediately think about the change itself. they think about everything connected to it. 
+
+move a hole and assembly might change. increase accuracy and cost might increase. fix one bug and another system might stop working.
 
 engineering is less about individual components and more about the relationships between them.
 
@@ -59,17 +61,40 @@ engineering is less about individual components and more about the relationships
 ## "just" is a compliment in disguise
 strangely enough, hearing the word "just" can actually mean you've done your job well.
 
-relating to my previous post, good engineering hides complexity. nobody notices the testing when the software never crashes or the tolerances when everything fits together or the calculations when the bridge stays standing.
+good engineering hides complexity (shameless plug, i know. now go read my previous post :D).
 
-they only see something that appears effortless. the better engineered a product is, the easier it looks. 
+nobody notices the testing when the software never crashes or the tolerances when everything fits together or the calculations when the bridge stays standing.
 
-perhaps that's why people believe changing it shoudl be easy too.
+they only notice when something goes wrong. until then, all they see is something that appears effortless. the better engineered a product is, the easier it looks. 
+
+perhaps that's why people believe changing it should be easy too.
 
 ---
 
 ## the curse of invisible work
+invisible work is difficult to estimate because, by definition, nobody sees it.
 
+reviews celebrate features. demonstrations showcase results.
+
+nobody applauds the engineer who prevented ten problems from ever existing. yet that is where much of engineering actually happens.
+
+in the work that quietly ensures everything else continues to work.
 
 ---
 
-## 
+## perhaps "just" isn't the problem
+the next time someone says, "can you just...", they'll probably only be thinking about the change they can see.
+
+you'll probably be thinking about everything they can't.
+
+neither of you is wrong. you're simply looking at two different versions of the same problem.
+
+perhaps that's what experience really changes. it doesn't make engineers work faster. it changes what they notice.
+
+and once you've learnt to see every dependency, every consequence and every hidden decision, there's no such thing as "just" anymore.
+
+---
+
+*written after discovering that "just a small change" is engineering's equivalent of "we need to talk."*
+
+*krish iyer*
