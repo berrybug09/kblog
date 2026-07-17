@@ -1,3 +1,7 @@
+/* ==========================================================
+   GLOBAL
+   ========================================================== */
+
 body {
     background:
         radial-gradient(
@@ -30,6 +34,11 @@ body.post {
     padding: 3rem 2rem;
 }
 
+
+/* ==========================================================
+   LAYOUT
+   ========================================================== */
+
 .container {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -37,13 +46,7 @@ body.post {
     min-height: 70vh;
     position: relative;
     z-index: 2;
-
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    gap: 6rem;
-    min-height: 70vh;
 }
-
 
 .left-panel {
     padding-right: 2rem;
@@ -55,10 +58,41 @@ body.post {
 }
 
 
-.right-panel a {
-    font-size: 1rem;
-    line-height: 1.5;
+/* ==========================================================
+   TYPOGRAPHY
+   ========================================================== */
+
+h1 {
+    font-size: clamp(2.3rem, 6vw, 3.6rem);
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
 }
+
+#content h1 {
+    font-size: clamp(1.9rem, 5vw, 2.5rem);
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: #888;
+    font-weight: normal;
+}
+
+p {
+    color: #b0b0b0;
+    margin-top: 0;
+}
+
+
+/* ==========================================================
+   LINKS
+   ========================================================== */
 
 a {
     color: #d8d8d8;
@@ -72,7 +106,14 @@ a:hover {
 .back-link {
     display: inline-block;
     margin-bottom: 2rem;
+    text-decoration: none;
+    color: inherit;
 }
+
+
+/* ==========================================================
+   IMAGES & CODE
+   ========================================================== */
 
 img {
     max-width: 100%;
@@ -99,6 +140,11 @@ hr {
     margin: 2rem 0;
 }
 
+
+/* ==========================================================
+   LISTS
+   ========================================================== */
+
 ul {
     list-style: none;
     padding-left: 0;
@@ -115,8 +161,8 @@ li {
 }
 
 #content li {
-    margin-bottom: 0.1rem;
     margin-top: -0.2rem;
+    margin-bottom: 0.1rem;
     color: #999;
 }
 
@@ -128,38 +174,20 @@ li {
     margin: 0;
 }
 
-h1 {
-    font-size: 3.6rem;
-    margin-bottom: 0.5rem;
-    color: #f0f0f0;
+
+/* ==========================================================
+   BLOG COMPONENTS
+   ========================================================== */
+
+.right-panel a {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-#content h1{
-    font-size: 2.5rem;
-}
-
-h4 {
-    margin-top: 0;
-    margin-bottom: 3rem;
-    color: #888;
-    font-weight: normal;
-}
-
-h2 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-}
-
-p {
-    color: #b0b0b0;
-    margin-top: 0;
-}
-
-.back-link {
-    display: inline-block;
-    margin-bottom: 2rem;
-    text-decoration: none;
-    color: inherit;
+.post {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .post-date {
@@ -178,40 +206,6 @@ p {
     color: #ffffff;
 }
 
-.post {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-abbr {
-    text-decoration: underline dotted;
-    text-decoration-color: #666;
-    cursor: help;
-}
-
-abbr:hover {
-    color: #ffffff;
-}
-
-#cursor-glow {
-    position: fixed;
-    width: 350px;
-    height: 350px;
-
-    background: radial-gradient(
-        circle,
-        rgba(255,255,255,0.1) 0%,
-        rgba(198, 198, 198, 0.036) 30%,
-        rgba(255,255,255,0) 70%
-    );
-
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-
-    z-index: 1;
-}
-
 .engineering-note {
     margin: 2rem 0;
     padding-left: 1rem;
@@ -223,4 +217,147 @@ abbr:hover {
     margin-top: 2rem;
     color: #999;
     font-style: italic;
+}
+
+
+/* ==========================================================
+   MISCELLANEOUS
+   ========================================================== */
+
+abbr {
+    text-decoration: underline dotted;
+    text-decoration-color: #666;
+    cursor: help;
+}
+
+abbr:hover {
+    color: #ffffff;
+}
+
+
+/* ==========================================================
+   EFFECTS
+   ========================================================== */
+
+#cursor-glow {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,0.1) 0%,
+        rgba(198,198,198,0.036) 30%,
+        rgba(255,255,255,0) 70%
+    );
+
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+    body.home,
+    body.post {
+        padding: 2rem 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .left-panel {
+        padding-right: 0;
+    }
+
+    .right-panel {
+        border-left: none;
+        border-top: 1px solid #222;
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    #content h1 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        margin-bottom: 2rem;
+    }
+
+    .post-link {
+        display: inline-block;
+        line-height: 1.6;
+    }
+
+    #cursor-glow {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    body.home,
+    body.post {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        line-height: 1.15;
+    }
+
+    #content h1 {
+        font-size: 1.9rem;
+        line-height: 1.25;
+    }
+
+    h2 {
+        margin-top: 1.75rem;
+    }
+
+    h4 {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .engineering-note {
+        margin: 1.5rem 0;
+    }
+
+    .post {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .post-link {
+        font-size: 1.05rem;
+    }
+
+    pre {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    img {
+        border-radius: 2px;
+    }
+
 }
