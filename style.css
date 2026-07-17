@@ -258,6 +258,24 @@ abbr:hover {
 
 
 /* ==========================================================
+   MOBILE WRITEUPS
+   ========================================================== */
+
+.floating-writeups {
+    display: none;
+}
+
+.floating-writeups summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.floating-writeups summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* ==========================================================
    RESPONSIVE
    ========================================================== */
 
@@ -278,10 +296,7 @@ abbr:hover {
     }
 
     .right-panel {
-        border-left: none;
-        border-top: 1px solid #222;
-        padding-left: 0;
-        padding-top: 2rem;
+    display: none;
     }
 
     h1 {
@@ -303,6 +318,49 @@ abbr:hover {
 
     #cursor-glow {
         display: none;
+    }
+
+    .floating-writeups {
+        display: block;
+        position: fixed;
+        top: 2rem;
+        right: 1.5rem;
+        z-index: 999;
+    }
+
+    .floating-writeups summary {
+        padding: 0.7rem 1rem;
+        background: #161b22;
+        border: 1px solid #2b3137;
+        border-radius: 8px;
+        color: #ddd;
+        font-size: 0.95rem;
+    }
+
+    .floating-menu {
+        margin-top: 0.5rem;
+        width: 260px;
+        background: #161b22;
+        border: 1px solid #2b3137;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+
+    .floating-menu a {
+        display: block;
+        padding: 0.9rem 1rem;
+        border-bottom: 1px solid #2b3137;
+        line-height: 1.4;
+        color: #ddd;
+    }
+
+    .floating-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .floating-menu small {
+        color: #777;
     }
 
 }
